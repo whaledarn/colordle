@@ -163,6 +163,7 @@ if(date == null){
   // alert("setting date to " + currdate);
 }
 if(currdate != date){
+  date = currdate;
   localStorage.removeItem("attempts");
   localStorage.removeItem("won");
   localStorage.removeItem("rcolor");
