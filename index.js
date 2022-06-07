@@ -156,17 +156,17 @@ const year = new Date().getFullYear();
 const currdate = day+"/"+month+"/"+year;
 
 let date = localStorage.getItem("date");
-alert(currdate);
-alert(date);
+// alert(currdate);
+// alert(date);
 if(date == null){
   date = currdate;
-  alert("setting date to " + currdate);
+  // alert("setting date to " + currdate);
 }
 if(currdate != date){
   localStorage.removeItem("attempt");
-  alert("reseting")
+  // alert("reseting")
 }
-alert("date is "+date);
+// alert("date is "+date);
 localStorage.setItem("date", date);
 
 var limit = 20;
