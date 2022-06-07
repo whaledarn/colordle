@@ -1,0 +1,195 @@
+
+body {
+  /* padding: 40px; */
+  font-weight: bold;
+
+}
+.navbar-brand {
+  padding: auto;
+}
+.icon-list{
+  position: absolute;
+  right: 0;
+  margin-right:10px;
+}
+
+.onecolor{
+  text-align: center;
+}
+
+
+.center-text{
+  text-align: center;
+  padding: 5px;
+}
+
+.colorHead{
+  font-family: 'Roboto Slab', serif;
+  padding-top: 50px;
+  margin: auto;
+  width: 450px;
+}
+
+.colorBody{
+  font-family: 'Roboto Slab', serif;
+  /* padding-top: 50px; */
+  margin: auto;
+  width: 350px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+#redRange::-moz-range-thumb{
+  background: red;
+}
+#redRange::-webkit-slider-thumb{
+  background: red;
+}
+
+#greenRange::-moz-range-thumb{
+  background: green;
+}
+#greenRange::-webkit-slider-thumb{
+  background: green;
+}
+
+#blueRange::-moz-range-thumb{
+  background: blue;
+}
+#blueRange::-webkit-slider-thumb{
+  background: blue;
+}
+
+.colors{
+  /* background-color: gray; */
+  max-height: 500px;
+  max-width: 100% !important;
+overflow-x: hidden !important;
+  overflow-y:overlay;
+  width: 800px;
+  margin: auto;
+  padding-top:10px;
+  padding-bottom: 10px;
+}
+.button-div{
+  margin: auto;
+  padding-top:10px;
+  padding-bottom:10px;
+  text-align: center;
+}
+
+.slider-row{
+  padding-top: 5px;
+}
+
+.circle{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: inset -25px -25px -25px rgba(0, 0, 0, .3);
+  background-image: linear-gradient(-45deg, rgba(255, 255, 220, .3) 0%, transparent 100%);
+  text-align: center;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  margin: auto;
+  /* margin: 1px; */
+}
+
+.colorrow{
+  margin-bottom: 20px;
+}
+
+
+/* (A) RAINBOW COLOR SEQUENCE */
+@keyframes rainbow {
+  0% { color: #fc0303 }
+  17% { color: #45f52a }
+  34% { color: #2a7bf5 }
+  51% { color: #2af5e4 }
+  68% { color: #c92af5 }
+  85% { color: #f5dd2a }
+  100% { color: #66655d }
+}
+
+/* (B) ATTACH RAINBOW EFFECT */
+.rainbow {
+  animation-name: rainbow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.navbar-brand{
+  font-size: 30px;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.icons{
+  margin: 5px;
+  border-width: 0;
+  background: none;
+}
+
+.stats{
+  text-align: center;
+}
+
+#grad {
+  height: 15px;
+  background-image: linear-gradient(to right, #00ff00 ,yellow, #ff0000);
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+    background: white;
+}
+
+/* button */
+::-webkit-scrollbar-button {
+    background: white;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: gray;
+}

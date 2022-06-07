@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/1dbc3bb054.js" crossorigin="anonymous"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+
+
+  <!--
+  <div class="min-max-slider" data-legendnum="2">
+    <label for="min">Minimum price</label>
+    <input id="min" class="min" name="min" type="range" step="1" min="0" max="100" />
+    <label for="max">Maximum price</label>
+    <input id="max" class="max" name="max" type="range" step="1" min="0" max="100" />
+  </div>
+  <div class="colors row">
+    <div class="col color1">
+      penis
+    </div>
+    <div class="col color2">
+      penis
+    </div>
+    <div class="col color3">
+      penis
+    </div>
+  </div> -->
+
+
+  <nav class="navbar bg-light">
+    <div class="container-fluid">
+      <div class="navbar-brand mx-auto order-0" href="#">
+        <a class="rainbow" href="https://en.wikipedia.org/wiki/RGB_color_model" target="_blank">color</a>dle
+      </div>
+
+      <div class="ms-auto icon-list">
+        <!-- <button data-bs-toggle="modal" data-bs-target="#settingsModal" class="icons settings-icon"><i class="fa-solid fa-gear"></i></button> -->
+        <button data-bs-toggle="modal" data-bs-target="#questionsModal" class="icons leaderboard-icon"><i class="fa-regular fa-circle-question"></i></button>
+        <button data-bs-toggle="modal" data-bs-target="#leaderboardModal" class="icons question-icon"><i class="fa-solid fa-chart-simple"></i></button>
+      </div>
+
+
+
+    </div>
+  </nav>
+
+
+  <div class="colorHead">
+    <div class="onecolor">
+      <h4>Color to Match</h4>
+    </div>
+
+    <div class="row slider-row">
+      <div class="col">
+        <div class="slidecontainer">
+          <input type="range" min="0" max="255" value="127" class="slider" id="redRange">
+        </div>
+        <div class="center-text">
+          <input class="sliderValue" type="number" id="redOutput" name="quantity" min="0" max="255" value="127">
+        </div>
+
+        <!-- <div id="redOutput" class="sliderValue">
+      </div> -->
+      </div>
+      <div class="col">
+        <div class="slidecontainer">
+          <input type="range" min="0" max="255" value="127" class="slider" id="greenRange">
+        </div>
+        <div class="center-text">
+          <input class="sliderValue" type="number" id="greenOutput" name="quantity" min="0" max="255" value="127">
+        </div>
+        <!-- <div id="greenOutput" class="sliderValue"> -->
+        <!-- </div> -->
+      </div>
+      <div class="col">
+        <div class="slidecontainer">
+          <input type="range" min="0" max="255" value="127" class="slider" id="blueRange">
+        </div>
+        <div class="center-text">
+          <input class="sliderValue" type="number" id="blueOutput" name="quantity" min="0" max="255" value="127">
+        </div>
+        <!-- <div id="blueOutput" class="sliderValue"> -->
+        <!-- </div> -->
+      </div>
+    </div>
+    <div class="button-div">
+      <button id="submitButton" type="button" class="btn btn-primary btn-md">Enter</button>
+
+    </div>
+  </div>
+
+  <div class="colorBody">
+
+
+
+    <div class="colors">
+      <div class="row">
+        <div class="col text-center">
+          <i class="fa-solid fa-r"></i>
+        </div>
+        <div class="col text-center">
+          <i class="fa-solid fa-g"></i>
+        </div>
+        <div class="col text-center">
+          <i class="fa-solid fa-b"></i>
+        </div>
+        <div class="col text-center">
+          <i class="fa-solid fa-x"></i>
+        </div>
+        <div class="col text-center">
+          <i class="fa-solid fa-check"></i>
+        </div>
+      </div>
+    </div>
+
+    <div id="colorList" class="colors">
+
+    </div>
+  </div>
+
+  <div class="modals">
+    <!-- Modal -->
+    <!-- <div class="modal fade" id="settingsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Settings</h5>
+            <button type="button" class="btn-close icons" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+    <div class="modal fade" id="questionsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">How To Play</h5>
+            <button type="button" class="btn-close icons" data-bs-dismiss="modal" aria-label="Close"><i class="fa-light fa-x"></i></button>
+          </div>
+          <div class="modal-body">
+            <h6>Colordle is a spinoff of Wordle designed around the RGB color system. Learn more about RGB <a href="https://www.nixsensor.com/blog/what-is-rgb-color/" target="_blank">here.</a></h6>
+
+            <h6>The goal of colordle is to guess the RGB value of the given color within a distance of 20, calculated by the <a href="https://en.wikipedia.org/wiki/Color_difference#Euclidean">Euclidean distance.</a> The smaller the distance, the closer your guess is. You have unlimited attempts.</h6>
+
+            <h6>For each attempt use the sliders or input numbers for the RGB value. The maximum input for each is 255. Hit submit to enter your guess.</h6>
+
+            <h6>After you hit enter, five colored balls will appear, as shown below.</h6>
+
+            <hr>
+
+            <div class="row">
+              <div class="col text-center">
+                <i class="fa-solid fa-r"></i>
+              </div>
+              <div class="col text-center">
+                <i class="fa-solid fa-g"></i>
+              </div>
+              <div class="col text-center">
+                <i class="fa-solid fa-b"></i>
+              </div>
+              <div class="col text-center">
+                <i class="fa-solid fa-x"></i>
+              </div>
+              <div class="col text-center">
+                <i class="fa-solid fa-check"></i>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col text-center">
+                <div class="circle" style="background:#00ff00">106</div>
+              </div>
+              <div class="col text-center">
+                <div class="circle" style="background:#ffff00">173</div>
+              </div>
+              <div class="col text-center">
+                <div class="circle" style="background:#ff0000">138</div>
+              </div>
+              <div class="col text-center">
+                <div class="circle" style="background:#6aad8a">50</div>
+              </div>
+              <div class="col text-center">
+                <div class="circle" style="background:#48d962">1</div>
+              </div>
+            </div>
+            <hr>
+            <h6>The first three balls represent the RGB values entered as an attempt. The numbers represent the values. The color of the balls represent how close your guess is. View the gradient below:</h6>
+
+            <div id="grad">
+
+            </div>
+            <hr>
+
+            <h6>The fourth ball's color indicates the color of your guess. The number indicates the Euclidean distance between your color and the correct color.</h6>
+            <hr>
+            <h6>The last ball's color indicates the correct color. The number indicates which attempt you are on.</h6>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="leaderboardModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Leaderboard</h5>
+            <button type="button" class="btn-close icons" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="won-game">
+
+              </div>
+              <div class="stats">
+
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
