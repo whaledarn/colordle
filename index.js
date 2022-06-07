@@ -164,6 +164,10 @@ if(date == null){
 }
 if(currdate != date){
   localStorage.removeItem("attempt");
+  localStorage.removeItem("won");
+  localStorage.removeItem("rcolor");
+  localStorage.removeItem("gcolor");
+  localStorage.removeItem("bcolor");
   // alert("reseting")
 }
 // alert("date is "+date);
